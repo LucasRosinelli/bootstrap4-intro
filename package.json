@@ -15,5 +15,8 @@
   ],
   "author": "Lucas Rosinelli da Rocha",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/lucasrosinelli/bootstrap4-intro#readme"
+  "homepage": "https://bitbucket.org/lucasrosinelli/bootstrap4-intro#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }
