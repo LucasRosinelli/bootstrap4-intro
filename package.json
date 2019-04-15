@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap4-intro",
+  "version": "1.0.0",
+  "description": "Introduction to Bootstrap 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://lucasrosinelli@bitbucket.org/lucasrosinelli/bootstrap4-intro.git"
+  },
+  "keywords": [
+    "bootstrap4"
+  ],
+  "author": "Lucas Rosinelli da Rocha",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/lucasrosinelli/bootstrap4-intro#readme"
+}
