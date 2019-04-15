@@ -28,8 +28,96 @@
             </ul>
         </div>
     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Alerts</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-primary" role="alert">
+                    PRIMARY: I'm an alert!
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-secondary" role="alert">
+                    SECONDARY: I'm an alert!
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-info" role="alert">
+                    INFO: I'm an alert!
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-success" role="alert">
+                    SUCCESS: I'm an alert!
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-warning" role="alert">
+                    WARNING: I'm an alert!
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-danger" role="alert">
+                    DANGER: I'm an alert!
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-light" role="alert">
+                    LIGHT: I'm an alert! <a href="https://www.google.com/" class="alert-link" target="google">Open Google</a>!
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="alert-heading">DARK</h4>
+                    <p>I'm an alert content dismissable!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-8">
+                <div class="alert alert-info alert-dismissible fade show" role="alert" id="displayAlertMessage">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="alert-heading">BUTTON info</h3>
+                    <p class="mb-0">I'm an alert activated by button click! Is this text too long? How does it fit inside an alert?</p>
+                </div>
+            </div>
+            <div class="col col-4">
+                <button type="button" class="btn btn-info" id="displayAlertButton">Display / Hide alert</button>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#displayAlertButton').click(function() {
+                $('#displayAlertMessage').alert().toggle();
+            });
+        });
+    </script>
 </body>
 </html>
